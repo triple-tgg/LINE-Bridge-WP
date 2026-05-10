@@ -1,0 +1,45 @@
+.line-bridge-login-wrap { margin: 16px 0; text-align: center; }
+
+.line-bridge-login-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background: #06C755;
+	color: #fff;
+	text-decoration: none;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	transition: background 0.2s;
+}
+.line-bridge-login-btn:hover { background: #05a847; color: #fff; text-decoration: none; }
+.line-bridge-login-btn img  { flex-shrink: 0; }
+
+.line-bridge-separator {
+	text-align: center;
+	margin: 16px 0;
+	position: relative;
+}
+.line-bridge-separator::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #ddd;
+}
+.line-bridge-separator span {
+	position: relative;
+	background: #fff;
+	padding: 0 12px;
+	color: #888;
+	font-size: 13px;
+}
+
+.line-bridge-account-section { padding: 20px 0; }
+.line-bridge-account-section h2 { margin-bottom: 16px; }
+.line-bridge-connected { display: flex; flex-direction: column; gap: 12px; }
+.line-bridge-avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #06C755; }
+.line-bridge-linked-at { font-size: 13px; color: #666; }
+.line-bridge-unlink-btn { margin-top: 8px; }

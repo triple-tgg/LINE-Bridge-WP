@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ติดตามออเดอร์ — LINE Bridge WP</title>
+	<link rel="stylesheet" href="liff.css">
+	<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+<div id="app">
+	<header class="liff-header">
+		<img src="../assets/images/line-logo.svg" alt="LINE" width="24">
+		<h1 id="site-name">ติดตามออเดอร์</h1>
+	</header>
+
+	<div id="loading" class="liff-loading">
+		<div class="spinner"></div>
+		<p>กำลังโหลด...</p>
+	</div>
+
+	<div id="error-screen" class="liff-error" style="display:none">
+		<p id="error-msg">เกิดข้อผิดพลาด</p>
+		<button id="retry-btn" class="btn-primary">ลองใหม่</button>
+	</div>
+
+	<div id="order-screen" style="display:none">
+		<div class="order-card">
+			<div class="order-header">
+				<span class="label">ออเดอร์</span>
+				<span id="order-number" class="order-number">#—</span>
+			</div>
+			<div class="status-badge" id="status-badge">รอ</div>
+			<div class="order-details">
+				<div class="detail-row">
+					<span>วันที่สั่งซื้อ</span>
+					<span id="order-date">—</span>
+				</div>
+				<div class="detail-row total">
+					<span>ยอดรวม</span>
+					<span id="order-total">—</span>
+				</div>
+			</div>
+			<div id="order-items" class="order-items"></div>
+		</div>
+	</div>
+
+	<div id="no-order-screen" style="display:none">
+		<p>ไม่พบข้อมูลออเดอร์</p>
+	</div>
+</div>
+
+<script src="liff.js"></script>
+</body>
+</html>
